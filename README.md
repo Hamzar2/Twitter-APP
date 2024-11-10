@@ -1,7 +1,6 @@
-# Decentralized Social Media Platform Report
+# Decentralized Mini-Social Media Platform
 
-This repo enables a decentralized social media platform where users can connect their Ethereum wallets, publish posts, and interact with posts from other users. Here’s a breakdown of the core features:
-
+This repo enables a decentralized social media platform where users can connect their Ethereum wallets, publish posts, and interact with posts from other users.
 ## 1. Wallet Connection
 
 Users start by connecting their Ethereum wallet, such as MetaMask, to the platform. This connection allows users to interact with blockchain-based content and verifies their identity by linking their Ethereum address to their activity on the platform. Once connected, the user’s wallet address is displayed, and existing posts are loaded for viewing.
