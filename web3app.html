@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web 3 Demo</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.8.1/dist/web3.min.js"></script>
+    
+    <script src="script.js" type="module"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="header">
+        <h1>Mini Twitter</h1>
+        <div>
+            <button onclick="connectWallet()" class="wallet-button"><i class="fas fa-wallet"></i> Connect Wallet</button>
+            <span id="walletAddress"></span>
+        </div>
+    </div>
+    
+    <!-- Introductory text before connection -->
+    <div id="introText" style="text-align: center; padding: 20px;">
+        <span id="introTextContent"></span>
+    </div>
+    
+    <!-- Main content (initially hidden) -->
+    <div id="mainContent" style="display: none;">
+        <div class="container"></div>
+        <div class="feed">
+            <div id="postsFeed"></div>
+        </div>
+        
+        <div class="post-form" style="padding: 15px;">
+            <textarea id="postContent"  placeholder="What's happening?"></textarea>
+            <button class="button-success" onclick="publishPost()">Tweet</button>
+        </div>
+    </div>
+</body>
+
+</html>
