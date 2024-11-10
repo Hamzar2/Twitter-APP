@@ -77,7 +77,7 @@ function createPostElement(post, index) {
         day: 'numeric', 
         hour: 'numeric', 
         minute: 'numeric',  
-        hour12: true // Optional: Use 12-hour clock instead of 24-hour
+        hour12: true 
     });
    
 
@@ -99,27 +99,27 @@ function createPostElement(post, index) {
 
 
     // Like Button with Icon
-    const likeButton = document.createElement("i"); // Use <i> for icon
-    likeButton.className = "fas fa-thumbs-up like-icon"; // Font Awesome like icon
+    const likeButton = document.createElement("i"); 
+    likeButton.className = "fas fa-thumbs-up like-icon"; 
     likeButton.onclick = () => likePost(index);
     likeDislikeContainer.appendChild(likeButton);
 
     const likeCount = document.createElement("span");
     likeCount.id = `likeCount_${index}`;
-    likeCount.innerText = post[4]; // Likes count
+    likeCount.innerText = post[4]; 
     likeDislikeContainer.appendChild(likeCount);
 
 
     // Dislike Button with Icon
     const dislikeButton = document.createElement("i");
-    dislikeButton.className = "fas fa-thumbs-down dislike-icon"; // Font Awesome dislike icon
+    dislikeButton.className = "fas fa-thumbs-down dislike-icon"; 
     dislikeButton.onclick = () => dislikePost(index);
     likeDislikeContainer.appendChild(dislikeButton);
 
 
     const dislikeCount = document.createElement("span");
     dislikeCount.id = `dislikeCount_${index}`;
-    dislikeCount.innerText =  post[5];  // Dislikes count
+    dislikeCount.innerText =  post[5];  
     likeDislikeContainer.appendChild(dislikeCount);
 
 
@@ -144,7 +144,7 @@ function createPostElement(post, index) {
 async function likePost(index) {
     try {
         await contract.methods.likePost(index).send({ from: account });
-        loadPosts(); // Reload posts to reflect the change
+        loadPosts(); 
     } catch (error) {
         console.error("Error liking post:", error);
         alert("Error liking post: " + error.message);
@@ -154,7 +154,7 @@ async function likePost(index) {
 async function dislikePost(index) {
     try {
         await contract.methods.dislikePost(index).send({ from: account });
-        loadPosts(); // Reload posts to reflect the change
+        loadPosts(); 
     } catch (error) {
         console.error("Error disliking post:", error);
         alert("Error disliking post: " + error.message);

@@ -1,19 +1,19 @@
 body {
     font-family: sans-serif;
-    background-color: #f5f8fa; /* Twitter-like background */
+    background-color: #f5f8fa; 
     margin: 0;
-    color: #14171a; /* Twitter text color */
+    color: #14171a;
 }
 
 .container {
     max-width: 900px;
     margin: 20px auto;
-    border: 1px solid #e6ecf0; /* Twitter border */
+    border: 1px solid #e6ecf0; 
     border-radius: 5px;
 }
 
 .header {
-    background-color: white; /* White header */
+    background-color: white; 
     border-bottom: 1px solid #e6ecf0;
     padding: 15px;
     display: flex;
@@ -43,7 +43,7 @@ body {
 }
 
 .button-success {
-    background-color: #1DA1F2; /* Twitter blue */
+    background-color: #1DA1F2; 
     color: white;
     border: none;
     padding: 10px 20px;
@@ -90,7 +90,7 @@ body {
 }
 .post {
     display: grid;
-    grid-template-columns: 1fr auto; /* Content and address columns */
+    grid-template-columns: 1fr auto; 
     grid-template-areas: 
         "address address"
         "content content"
@@ -156,8 +156,8 @@ body {
 
 .like-dislike {
     display: flex;
-    gap: 10px; /* Espace entre les éléments enfants (icônes de like et dislike) */
-    align-items: center; /* Aligner les icônes verticalement au centre */
+    gap: 10px; 
+    align-items: center; 
 }
 
 
@@ -223,7 +223,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60vh; /* Center vertically */
+    height: 60vh; 
     text-align: center;
     padding: 20px;
 }
@@ -231,13 +231,13 @@ body {
 #introTextContent {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #1DA1F2; /* Twitter blue */
+    color: #1DA1F2; 
     font-family: 'Courier New', Courier, monospace;
-    max-width: 50%; /* Limit width to ensure text wrapping */
+    max-width: 50%; 
     line-height: 1.5;
     opacity: 0.9;
     animation: blink 1s infinite;
-    white-space: pre-wrap; /* Allow wrapping */
+    white-space: pre-wrap; 
 }
 
 /* Blinking cursor effect */
